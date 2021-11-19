@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/* ---- CSS RESET ---- */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* COLOR VARIABLES */
+:root {
+    --petrol: #136772;
+    --black: #131313;
+    --purple: #b889b2;
+    --white: #f3f3f3;
+}
