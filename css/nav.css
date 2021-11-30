@@ -1,7 +1,64 @@
+@import url("styles.css"); /* IMPORTERES SÅ VI HAR ADGANG TIL VARIABLER */
+
 /* HEADER STYLING */
 
+.headFlex {
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
 
 /* MENU STYLING */
 
+.logo {
+    width: 180px;
+}
+
+.mobileiconlabel {
+    color: var(--Green);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: var(--Green); 
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 900px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 /* FOOTER STYLING */
+
+
+
+
+
+
+
+/* COPYRIGHT STYLING */
+
+.some-box img {
+    width: 50px;
+}
+
+.copyright-box p {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--lightGreen);
+    text-align: center;
+    padding: 20px 0;
+    color: var(--Green);
+}

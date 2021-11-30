@@ -12,8 +12,36 @@
 
 /* COLOR VARIABLES */
 :root {
-    --petrol: #136772;
     --black: #131313;
-    --purple: #b889b2;
-    --white: #f3f3f3;
+    --lightGreen: #c6cea5; 
+    --Green: #a0a97c;
+    --blue: #83a09e; 
 }
+
+html {
+  font-family: "Montserrat", Verdana, Arial, sans-serif;
+  height: 100%;
+}
+
+/* Det bliver lige rettet til. nu sætter jeg det bare lige op */
+/* Font-size */
+h1 {
+  font-size: 3rem;
+  color: var(--Green); 
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--Green);
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--lightGreen); 
+}
+
+p {
+  font-size: 1.2rem;
+  color: var(--black); 
+}
+
