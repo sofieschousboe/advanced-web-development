@@ -1,0 +1,52 @@
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+main div img {
+    width: 50px;
+}
+
+main h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+main h2 {
+    margin: 10px 0;
+}
+
+main p {
+    margin-bottom: 40px;
+}
+
+main ul {
+    font-size: 1.2rem;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+main ul li::before {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/blad.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+main p span {
+    font-style: italic;
+}
+
+main p a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}

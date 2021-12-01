@@ -15,29 +15,34 @@
     --black: #131313;
     --lightGreen: #c6cea5; 
     --Green: #a0a97c;
-    --blue: #83a09e; 
+    --blue: #83a09e;
 }
 
 html {
   font-family: "Montserrat", Verdana, Arial, sans-serif;
+  font-weight: 500;
   height: 100%;
+  background-color: #ffffff;
 }
 
 /* Det bliver lige rettet til. nu sætter jeg det bare lige op */
 /* Font-size */
 h1 {
-  font-size: 3rem;
-  color: var(--Green); 
+  font-size: 2.3rem;
+  color: var(--Green);
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: var(--Green);
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: var(--lightGreen); 
+  font-weight: 500;
 }
 
 p {
