@@ -16,6 +16,7 @@
     --lightGreen: #c6cea5; 
     --Green: #a0a97c;
     --blue: #83a09e;
+    --gray: #707070;
 }
 
 html {
@@ -48,7 +49,7 @@ h3 {
 
 p {
   font-size: 1.2rem;
-  color: var(--black); 
+  color: var(--gray); 
 }
 
 /* MEDIA QUERY FOR DESKTOP */

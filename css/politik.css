@@ -3,8 +3,17 @@ main {
     padding: 20px;
 }
 
+@media only screen and (min-width: 900px) {
+    main {
+        display: block;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+}
+
 main div img {
     width: 50px;
+    cursor: pointer;
 }
 
 main h1 {
@@ -47,6 +56,6 @@ main p span {
 
 main p a {
     text-decoration: none;
-    color: black;
+    color: var(--lightGreen);
     font-style: italic;
 }
