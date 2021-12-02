@@ -71,8 +71,8 @@
     .farve {
         border-bottom: 1px solid #a0a97c;
         width: 100%; 
-        padding-bottom: 30px;
-        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
         display:flex; 
         flex-direction: row;
         justify-content: space-between;
