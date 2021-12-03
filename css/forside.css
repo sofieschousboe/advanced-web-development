@@ -15,33 +15,33 @@ main {
 }
 
 .stemningsbillede1_mobile {
-    background-image: url(../img/st-img/st-coffee-mob.jpg);
+    background-image: url(../img/st-img/st-coffee-mini.jpg);
 	background-attachment: fixed;
-    background-position: top;
+    background-position: right;
     background-repeat: no-repeat;
     width: 100%;
-    height: 400px;
+    height: 500px;
     z-index: 99; 
 }
 
 .stemningsbillede2_mobile {
-    background-image: url(../img/st-img/st-food-mob.jpg);
+    background-image: url(../img/st-img/st-food-mini.jpg);
 	background-attachment: fixed;
-        background-position: center;
+        background-position: bottom;
     background-repeat: no-repeat;
     width: 100%;
-    height: 400px;
+    height: 500px;
     top: 0; 
     z-index: 99; 
 }
 
 .stemningsbillede3_mobile {
-    background-image: url(../img/st-img/st-kage-mob.jpg);
+    background-image: url(../img/st-img/st-kage-mini.jpg);
 	background-attachment: fixed;
         background-position: center;
     background-repeat: no-repeat;
     width:100%;
-    height: 400px;
+    height: 500px;
     top: 0; 
     z-index: 99; 
 }
@@ -100,6 +100,22 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+}
+
+.mere_link {
+	text-align: center;
+	text-decoration: none;
+	color: var(--gray);
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 170px;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.frem_billede {
+	width: 60px;
 }
 
 /* Info section - PC style */
