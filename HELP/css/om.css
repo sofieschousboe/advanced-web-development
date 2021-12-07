@@ -1,0 +1,129 @@
+@import url("styles.css"); /* IMPORTERES SÅ VI HAR ADGANG TIL VARIABLER */
+
+
+main {
+	padding-top: 120px;
+	padding-bottom: 55px;
+}
+
+/* top style*/
+.om_billede_top {
+	width: 100%;
+	box-shadow: 3px 3px 8px #70707091;
+}
+
+.om_top_header {
+	text-align: center;
+	font-size: 1.7rem;
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	color: #707070;
+}
+
+/* top style - PC style */
+@media only screen and (min-width: 1200px) {
+	.om_billede_top {
+		width: 60%;
+		display: block;
+		margin-left: auto;
+		margin-right: 80px;
+	}
+
+	.om_top_header {
+		z-index: 99;
+		margin-top: -350px;
+		text-align: left;
+		font-size: 4.5rem;
+		width: 450px;
+		font-weight: 600;
+		display: block;
+		margin-right: auto;
+		margin-left: 80px;
+		color: var(--lightGreen);
+	}
+
+	.top_section_om {
+		margin-bottom: 120px;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.om_top_header {
+		font-size: 5.3rem;
+		width: 700px;
+		margin-top: -390px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	.om_top_header {
+		font-size: 6.5rem;
+		width: 900px;
+		margin-top: -480px;
+	}
+
+	.top_section_om {
+		margin-bottom: 190px;
+	}
+}
+
+/* bottom style */
+.om_billede_bottom {
+	width: 100%;
+	box-shadow: 3px 3px 8px #7070709d;
+}
+
+.bottom_flex_om {
+	margin-top: 30px;
+}
+
+.bottom_tekst_et {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	text-align: center;
+	color: #707070;
+}
+
+.bottom_tekst_to {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	text-align: center;
+	color: #707070;
+}
+
+/* bottom style - PC style */
+@media only screen and (min-width: 1200px) {
+	.bottom_flex_om {
+		display: flex;
+		flex-direction: row;
+		margin-top: 70px;
+		margin-bottom: 30px;
+	}
+
+	.om_billede_bottom {
+		width: 60%;
+		margin-left: 80px;
+	}
+
+	.bottom_tekst_et {
+		margin-right: 80px;
+		margin-left: 40px;
+		font-size: 1.7rem;
+	}
+
+	.bottom_tekst_to {
+		width: 65%;
+		font-size: 1.5rem;
+        margin-bottom: 40px;
+	}
+}

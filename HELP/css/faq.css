@@ -1,0 +1,87 @@
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+.back {
+  padding-top: 120px;
+  width: 40px;
+}
+
+@media only screen and (min-width: 900px) {
+    main {
+        display: block;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+}
+
+main h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+main p span {
+    font-style: italic;
+}
+
+main p a {
+    text-decoration: none;
+    color: var(--lightGreen);
+    font-style: italic;
+}
+
+button:first-of-type {
+    margin-top: 50px;
+}
+
+.accordion {
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gray);
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    border: none;
+    text-align: left;
+    outline: none;
+    display: flex;
+    margin: 2px auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    border: 1px solid #83a09e;
+    border-radius: 10px;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: var(--blue);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    display: block;
+    margin: 10px auto 20px;
+    width: 90%;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
