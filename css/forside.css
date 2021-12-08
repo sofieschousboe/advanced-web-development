@@ -115,7 +115,7 @@ main {
 }
 
 .frem_billede {
-	width: 60px;
+	width: 40px;
 }
 
 /* Info section - PC style */
@@ -234,4 +234,127 @@ main {
         margin-right: 20px;
         font-size: 1.1rem;
     }
+}
+
+
+/* TRUSTPILOT */
+
+.title {
+  color: var(--gray);
+  padding-bottom: 10px;
+  margin-top: 10px;
+  
+}
+
+.wrapper-left {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.rating img {
+  max-width: 240px;
+  margin: auto;
+}
+
+.review_p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.review-count {
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.tp_logo {
+    width: 200px;
+}
+
+#reviews {
+  padding: 0 5px;
+  margin-bottom: 40px;
+}
+
+.row {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+#reviews h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
+
+.review-box {
+  display: flex;
+  position: relative;
+  padding: 0;
+}
+
+.review-box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 33px;
+  position: absolute;
+  height: calc(100% - 4px);
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.review-box .prev {
+  left: 2px;
+}
+
+.review-box .prev img {
+    width: 100%;
+    padding-left: 5px;
+}
+
+.review-box .next {
+  right: 2px;
+}
+
+.review-box .next img {
+    width: 100%;
+    padding-right: 5px;
+}
+
+.review {
+  display: none;
+  padding: 35px 45px;
+  border-radius: 5px;
+  border: 1px solid #83a09e;
+  box-shadow: 2px 2px 10px #83a09e; 
+  min-height: 20rem;
+}
+
+.review h3 {
+    color: var(--gray);
+    font-size: 1.3rem;
+}
+
+.review p {
+    color: #707070;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.img-responsive {
+    width: 140px;
+}
+
+.customer-name {
+  display: block;
+  margin-top: 20px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: right;
+  color: var(--gray);
 }

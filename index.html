@@ -17,7 +17,7 @@
     <header>
         <div class="headFlex navigation__container">
         <div class="farve">
-        <a href="#" class="link" rel="link">
+        <a href="index.html" class="link" rel="link">
             <img src="img/icons/logo.jpg" alt="logo" class="logo">
         </a>
         <nav>
@@ -26,9 +26,9 @@
         <div class="menuitems__container">
             <a href="pages/menu.html" rel="link" class="menuLink">MENU</a>
             <a href="pages/om.html" rel="link" class="menuLink">OM GRÖN</a>
-            <a href="pages/menu.html" rel="link" class="menuLink">KONTAKT</a>
-            <a href="pages/menu.html" rel="link" class="menuLink">LOGIN</a>
-            <a href="#" rel="link" class="menuLink"><img src="img/icons/cart.png" alt="Kurv" class="loginIkon"></a>
+            <a href="pages/kontakt.html" rel="link" class="menuLink">KONTAKT</a>
+            <a href="pages/login.html" rel="link" class="menuLink">LOGIN</a>
+            <a href="pages/kurv.html" rel="link" class="menuLink"><img src="img/icons/kurv.svg" alt="Kurv" class="loginIkon"></a>
             </div>
         </div>
                     </nav>
@@ -47,7 +47,7 @@
             <p class="info_forside_tekst"><strong>Mangler du mad til dit møde, konference, reception, fest, barnedåb, bryllup eller lignende? Lad os lave maden til dit arrangement!</strong><br><br><br>
             I vores menu finder du et stort udvalg af buffeter, fingerfood, sandwiches, majspandekager, supper, juicer & smoothies
             og desserter. Så mon ikke vi kan finde noget der passer dig? Vi leverer ud til hele Aarhus omegn.</p>
-            <a href="pages/om.html" rel="link" class="mere_link"><img src="img/icons/btn.png" class="frem_billede">Læs mere</a>
+            <a href="pages/om.html" rel="link" class="mere_link"><img src="img/icons/goto-btn.jpg" class="frem_billede">Læs mere</a>
         </section>
 
         <div class="stemningsbillede2_mobile">
@@ -58,21 +58,21 @@
         <section class="menu_forside_section">
             <h2 class="menu_forside_header">BUFFET</h2>
             <div class="menu_forside_flex">
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img1 img_style">BRUNCH<br>FRA 165,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img2 img_style">DEN GRØNNE<br>FRA 95,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img3 img_style">DEN MED GRØNTSAGSDELLER<br>FRA 125,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img4 img_style">DEN MED LAKS<br>FRA 185,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img5 img_style">DEN MED KYLLING<br>FRA 155,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img6 img_style">DEN MED TÆRTE<br>FRA 135,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img7 img_style">DEN STORE<br>FRA 225,-</div></a>
+                <a href="pages/detailview.html?menu=brunch" rel="link" id="brunch" class="menu_forside_link"><div class="menu_forside_img1 img_style">BRUNCH<br>FRA 165,-</div></a>
+                <a href="pages/detailview.html?menu=denGronne" rel="link" id="denGronne" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img2 img_style">DEN GRØNNE<br>FRA 95,-</div></a>
+                <a href="pages/detailview.html?menu=deller" rel="link" id="deller" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img3 img_style">DEN MED GRØNTSAGSDELLER<br>FRA 125,-</div></a>
+                <a href="pages/detailview.html?menu=salmon" rel="link" id="salmon" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img4 img_style">DEN MED LAKS<br>FRA 185,-</div></a>
+                <a href="pages/detailview.html?menu=kylling" rel="link" id="kylling" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img5 img_style">DEN MED KYLLING<br>FRA 155,-</div></a>
+                <a href="pages/detailview.html?menu=pie" rel="link" id="pie" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img6 img_style">DEN MED TÆRTE<br>FRA 135,-</div></a>
+                <a href="pages/detailview.html?menu=denStore" rel="link" id="denStore" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img7 img_style">DEN STORE<br>FRA 225,-</div></a>
             </div>
             <h2 class="menu_forside_header">ANDRE MENUER</h2>
             <div class="menu_forside_flex">
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img8 img_style">JUICE OG SMOOTHIE<br>FRA 20,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img9 img_style">KAGER OG DESSERTER<br>FRA 35,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img10 img_style">MAJSPANDEKAGER<br>FRA 88,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img11 img_style">SALATER<br>FRA 65,-</div></a>
-                <a href="#" rel="link" class="menu_forside_link"><div class="menu_forside_img12 img_style">SANDWICH<br>FRA 60,-</div></a>
+                <a href="pages/detailview.html?otherMenus=smoothies" rel="link" id="smoothies" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img8 img_style">JUICE OG SMOOTHIE<br>FRA 20,-</div></a>
+                <a href="pages/detailview.html?otherMenus=dessert" rel="link" id="dessert" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img9 img_style">KAGER OG DESSERTER<br>FRA 35,-</div></a>
+                <a href="pages/detailview.html?otherMenus=majspandekager" rel="link" id="majspandekager" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img10 img_style">MAJSPANDEKAGER<br>FRA 88,-</div></a>
+                <a href="pages/detailview.html?otherMenus=salat" rel="link" id="salat" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img11 img_style">SALATER<br>FRA 65,-</div></a>
+                <a href="pages/detailview.html?otherMenus=sandwich" rel="link" id="sandwich" class="menu_forside_link"onclick="showDetailView(id)"><div class="menu_forside_img12 img_style">SANDWICH<br>FRA 60,-</div></a>
             </div>
         </section>
 
@@ -81,7 +81,78 @@
         <div class="stemningsbillede3_pc">
         </div>
 
-        <div class="api_section"></div>
+        <!-- TRUSTPILOT -->
+        <section id="reviews" class="menu_forside_section">
+            <h2 class="menu_forside_header">anmeldelser:</h2>
+            <div class="wrapper-left">
+                <h3 class="title">Fremragende</h3>
+                <div class="rating">
+                    <img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png">
+                </div>
+                <div class="info">
+                    <p class="review_p">Baseret på <a href="#" class="review-count">6 anmeldelser</a></p>
+                </div>
+                <div class="brand-logo">
+                    <img src="img/icons/tp-logo.png" class="tp_logo">
+                </div>
+            </div>
+            
+            <div class="row review-box">
+                <!-- Single Review -->
+                <div class="review">
+                    <h3>Rungende ja herfra!</h3>
+                    <div class="stars"><img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive"></div>
+                    <p>33 timer siden</p><br>
+                    <p>Jeg er selv uddannet inden for gastronomi, men nogen gange er det bare rart at lade andre knokle og inspirere, så man kan være til stede for sine gæster. Vi blev absolut ikke skuffede! 5 stjerner herfra et professionelt syn!</p>
+                    <span class="customer-name">- Gitte Jørgensen</span>
+                </div>
+                <!-- Single Review -->
+                <div class="review">
+                    <h3>FIKA på hjul...</h3>
+                    <div class="stars"><img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive"></div>
+                    <p>21 dage siden</p><br>
+                    <p>De laver velsmagende, god og sund økologisk mad. Da jeg hørte de nu var kommet i cateringbranchen, besluttede jeg at
+                        ville prøve dem næste gang jeg skulle have gæster. Det var SÅ lækkert!</p>
+                    <span class="customer-name">- Mogens Hansen</span>
+                </div>
+                <!-- Single Review -->
+                <div class="review">
+                    <h3>Super lækker mad!</h3>
+                    <div class="stars"><img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive"></div>
+                    <p>65 dage siden</p><br>
+                    <p>Det er ikke sidste gang jeg bestiller hos Grön Catering. Rigtig god service, og super lækkert mad! </p>
+                    <span class="customer-name">- Line Norrman Jensen</span>
+                </div>
+                <div class="review">
+                    <h3>Catering til konfirmation</h3>
+                    <div class="stars"><img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive"></div>
+                    <p>94 dage siden</p><br>
+                    <p>Jeg havde bestilt Grøn catering til min datters konfirmation, da min datter lider af glutenallergi. Jeg havde i forvejen hørt godt om Fika og deres mad, og blev absolut ikke skuffet over maden. Den var lækker, faverig og indeholdte massere af forskellige ting, så der var noget til alle. Klart en anbefaling herfra!</p>
+                    <span class="customer-name">- Birgitte Klausen</span>
+                </div>
+                <!-- Single Review -->
+                <div class="review">
+                    <h3>Super service og lækker mad</h3>
+                    <div class="stars"><img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive"></div>
+                    <p>102 dage siden</p><br>
+                    <p>Jeg bestilte via mail da hjemmesiden drillede. De var meget serviceminded og god til at svare på mine spørgsmål. På dagen kom maden på nøjagtig det
+                    tidspunkt jeg havde bestilt. Maden var flot og indbydende anrettet, og maden var lige til at smide på bordet.</p>
+                    <span class="customer-name">- Henriette Jepsen</span>
+                </div>
+                <!-- Single Review -->
+                <div class="review">
+                    <h3>En varm anbefaling herfra!</h3>
+                    <div class="stars"><img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive"></div>
+                    <p>213 dage siden</p><br>
+                    <p>Maden smagte godt, var dejligt indbydende at se på og helt frisk og lækker! Jeg sender en varm anbefaling herfra!</p>
+                    <span class="customer-name">- Jonna Larsen</span>
+                </div>
+                <!-- /.review -->
+                <button class="prev"><img src="img/icons/back-btn.jpg"></button>
+                <button class="next"><img src="img/icons/goto-btn.jpg"></button>
+            </div>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -90,9 +161,9 @@
             <div class="some-box">
                 <h2>Følg os:</h2>
                 <div class="some-img-box">
-                    <a href="http://cafefika.dk/"><img src="img/icons/web.jpg"></a>
-                     <a href="https://www.instagram.com/gron_catering/"><img src="img/icons/insta.png"></a>
-                    <a href="https://www.facebook.com/groncateringaarhus"><img src="img/icons/fb.png"></a>
+                    <a href="http://cafefika.dk/"><img src="../img/icons/web.jpg"></a>
+                     <a href="https://www.instagram.com/gron_catering/"><img src="../img/icons/insta.png"></a>
+                    <a href="https://www.facebook.com/groncateringaarhus"><img src="../img/icons/fb.png"></a>
                 </div>
             </div>
             
@@ -112,28 +183,29 @@
                 </div>
                 <div class="links-box">
                     <h2>Links</h2>
-                    <a href="pages/menu.html" rel="link" class="footer_link">MENU</a><br>
-                    <a href="pages/om.html" rel="link" class="footer_link">OM GRÖN</a><br>
-                    <a href="pages/kontakt.html" rel="link" class="footer_link">KONTAKT</a><br>
-                    <a href="pages/kurv.html" rel="link" class="footer_link">KURV</a><br>
-                    <a href="pages/login.html" rel="link" class="footer_link">LOGIN</a>
+                    <a href="../pages/menu.html" rel="link" class="footer_link">MENU</a><br>
+                    <a href="../pages/om.html" rel="link" class="footer_link">OM GRÖN</a><br>
+                    <a href="../pages/kontakt.html" rel="link" class="footer_link">KONTAKT</a><br>
+                    <a href="../pages/kurv.html" rel="link" class="footer_link">KURV</a><br>
+                    <a href="../pages/login.html" rel="link" class="footer_link">LOGIN</a>
                 </div>
                 <div class="produktinfo-box">
                     <h2>Produktinfo</h2>
-                    <a href="pages/faq.html" class="footer_link">FAQ</a><br>
-                    <a href="pages/kontakt.html" class="footer_link">Hjælp</a><br>
-                    <a href="pages/pd.html" class="footer_link">Persondatapolitik</a><br>
-                    <a href="pages/copp.html" class="footer_link">Cookie- og privatlivspolitik</a>
+                    <a href="../pages/faq.html" class="footer_link">FAQ</a><br>
+                    <a href="../pages/kontakt.html" class="footer_link">Hjælp</a><br>
+                    <a href="../pages/pd.html" class="footer_link">Persondatapolitik</a><br>
+                    <a href="../pages/copp.html" class="footer_link">Cookie- og privatlivspolitik</a>
                 </div>
             <div>
                 <div class="logo-box"></div>
-                <img src="img/icons/logo.jpg" alt="logo" class="logoFooter">
+                <img src="../img/icons/logo.jpg" alt="logo" class="logoFooter">
                 <div class="logoFlex">
-                    <img src="img/vind.jpg" alt="billede" class="foedevareBillede">
-                    <img src="img/organic.jpg" alt="billede" class="foedevareBillede1">
-                    <img src="img/kontrolrapport.jpg" alt="billede" class="foedevareBillede">
+                    <img src="../img/vind.jpg" alt="billede" class="foedevareBillede">
+                    <img src="../img/organic.jpg" alt="billede" class="foedevareBillede1">
+                    <img src="../img/kontrolrapport.jpg" alt="billede" class="foedevareBillede">
                 </div>
             </div>
+        </div>
         </div>
 
     </footer>
@@ -141,11 +213,11 @@
     <footer class="footer_pc">
         <div class="footer-box">
             <div class="logo-box">
-                <img src="img/icons/logo.jpg" alt="logo" class="logoFooter">
+                <img src="../img/icons/logo.jpg" alt="logo" class="logoFooter">
                 <div class="logoFlex">
-                    <img src="img/vind.jpg" alt="billede" class="foedevareBillede">
-                    <img src="img/organic.jpg" alt="billede" class="foedevareBillede1">
-                    <img src="img/kontrolrapport.jpg" alt="billede" class="foedevareBillede">
+                    <img src="../img/vind.jpg" alt="billede" class="foedevareBillede">
+                    <img src="../img/organic.jpg" alt="billede" class="foedevareBillede">
+                    <img src="../img/kontrolrapport.jpg" alt="billede" class="foedevareBillede">
                 </div>
             </div>
             <div class="lol">
@@ -163,28 +235,28 @@
                         </p>
                         <a href="mailto:sofie.sjogaard@gmail.com" target="_blank">info@groncatering.dk</a>
                     </div>
+                    <div class="produktinfo-box">
+                        <h2>Produktinfo</h2>
+                        <a href="../pages/faq.html" class="footer_link">FAQ</a><br>
+                        <a href="../pages/kontakt.html" class="footer_link">Hjælp</a><br>
+                        <a href="../pages/pd.html" class="footer_link">Persondatapolitik</a><br>
+                        <a href="../pages/copp.html" class="footer_link">Cookie- og privatlivspolitik</a>
+                    </div>
                 <div class="links-box">
                     <h2>Links</h2>
-                    <a href="pages/menu.html" rel="link" class="footer_link">MENU</a><br>
-                    <a href="pages/om.html" rel="link" class="footer_link">OM GRÖN</a><br>
-                    <a href="pages/kontakt.html" rel="link" class="footer_link">KONTAKT</a><br>
-                    <a href="pages/kurv.html" rel="link" class="footer_link">KURV</a><br>
-                    <a href="pages/login.html" rel="link" class="footer_link">LOGIN</a>
-                </div>
-                <div class="produktinfo-box">
-                    <h2>Produktinfo</h2>
-                    <a href="pages/faq.html" class="footer_link">FAQ</a><br>
-                    <a href="pages/kontakt.html" class="footer_link">Hjælp</a><br>
-                    <a href="pages/pd.html" class="footer_link">Persondatapolitik</a><br>
-                    <a href="pages/copp.html" class="footer_link">Cookie- og privatlivspolitik</a>
+                    <a href="../pages/menu.html" rel="link" class="footer_link">MENU</a><br>
+                    <a href="../pages/om.html" rel="link" class="footer_link">OM GRÖN</a><br>
+                    <a href="../pages/kontakt.html" rel="link" class="footer_link">KONTAKT</a><br>
+                    <a href="../pages/kurv.html" rel="link" class="footer_link">KURV</a><br>
+                    <a href="../pages/login.html" rel="link" class="footer_link">LOGIN</a>
                 </div>
             </div>
             <div class="some-box">
                 <h2>Følg os:</h2>
                 <div class="some-img-box">
-                    <a href="http://cafefika.dk/"><img src="img/icons/web.jpg"></a>
-                    <a href="https://www.instagram.com/gron_catering/"><img src="img/icons/insta.png"></a>
-                    <a href="https://www.facebook.com/groncateringaarhus"><img src="img/icons/fb.png"></a>
+                    <a href="http://cafefika.dk/"><img src="../img/icons/web.jpg"></a>
+                    <a href="https://www.instagram.com/gron_catering/"><img src="../img/icons/insta.png"></a>
+                    <a href="https://www.facebook.com/groncateringaarhus"><img src="../img/icons/fb.png"></a>
                 </div>
             </div>
         </div>
@@ -193,5 +265,12 @@
         <div class="copyright-box">
             <p>&copy; 2021 GRÖN</p>
         </div> 
+
+
+    <!-- SCRIPTS -->
+   <!-- <script src="js/help-firebase.js" type="module"></script>   --> 
+   <script src="js/fb-trial.js" type="module"></script>
+   <script src="js/main.js"></script>
+
 </body>
 </html>

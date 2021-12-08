@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,31 +14,20 @@
 </head>
 
 <body>
+
+    <div onclick="goBack()" class="back-btn"><img src="../img/icons/back-btn.jpg"></div>
+
     <section id="menus" class="grid-container"></section>
 
     <section id="otherMenus" class="grid-container"></section>
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyA8wckfyKtLp5uYV4EcI9tIW6Ftqmk5gEQ",
-            authDomain: "advanced-web-dev-e092b.firebaseapp.com",
-            projectId: "advanced-web-dev-e092b",
-            storageBucket: "advanced-web-dev-e092b.appspot.com",
-            messagingSenderId: "741349315446",
-            appId: "1:741349315446:web:af57707c33ddf874c7a057"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-    </script>
 
-    <!-- main js file -->
-    <script src="../js/help-firebase.js" type="module"></script>
+    <!-- SCRIPTS -->
+    <script src="../js/main.js"></script>
+
+    <!-- firebase js file -->
+    <!-- <script src="../js/help-firebase.js" type="module"></script> -->
+    <script src="../js/fb-trial.js" type="module"></script>
 
 </body>
+</html>

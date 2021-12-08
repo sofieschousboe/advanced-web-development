@@ -9,6 +9,7 @@
     width: 100%;
     height: 120px;
     box-shadow: 3px 3px 8px #70707091; 
+    z-index: 1000;
 }
 
 /* MENU STYLING */
@@ -70,6 +71,25 @@
         box-shadow: none;
     } 
 
+    .menuLink:hover {
+        color: var(--blue);
+    }
+
+    .menuLink {
+        z-index: 1000;
+    }
+
+    .aktiv::before {
+        content: ".";
+        padding: 5px 15px;
+        background-color: var(--lightGreen);
+        border-radius: 50%;
+        color: var(--lightGreen);
+        position: relative;
+        left: 50%;
+        z-index: -1;
+    }
+
     .farve {
         border-bottom: 1px solid #a0a97c;
         width: 100%; 
@@ -104,6 +124,10 @@
     .mobileicon {
         display: none;
     }
+
+    .loginIkon {
+        width: 25px;
+    }
 }
 
 
@@ -130,6 +154,10 @@
 .some-box {
     text-align: center;
     margin-bottom: 40px;
+}
+
+.logoFlex {
+    overflow: hidden;
 }
 
 .some-box h2 {
@@ -214,7 +242,7 @@
 }
 
 .foedevareBillede {
-    width: 130px;
+    width: 110px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 40px;
@@ -230,6 +258,8 @@
     .footer_pc {
         display: flex; 
         flex-direction: row; 
+        justify-content: center;
+        padding: 0 80px;
     }
 
     .footer_mobil {
@@ -242,23 +272,29 @@
         padding-top: 60px;
         margin-left: auto;
         margin-right: auto;
-        width: 90%; 
+        width: 100%;
+        gap: 20px;
     }
 
     .footer-links-box {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
     }
 
+    .footer_link {
+        font-size: 1rem;
+    }
+    
     .logo-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        width: 30%; 
+        width: 40%; 
         padding: 0 20px;
+        margin-top: -120px;
     }
 
     .logoFooter {
@@ -266,15 +302,31 @@
         margin-left: auto;
         margin-right: auto;
         width: 250px;
+        margin-bottom: 20px;
     }
 
     .lol {
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
         padding: 0 20px;
+        border-left: 1px solid var(--lightGreen);
+        height: 300px;
+        margin-bottom: 60px;
+    }
+
+    .kontakt-box {
+        width: 270px; 
+    }
+
+    .produktinfo-box {
+        width: 270px;
+    }
+
+    .links-box {
+        width: 270px;
     }
 }
 

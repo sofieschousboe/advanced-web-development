@@ -1,3 +1,9 @@
+
+.back-btn {
+    width: 50px;
+    cursor: pointer;
+}
+
 /* ---------- root variables ---------- */
 :root {
 	--green: rgb(38, 76, 89);

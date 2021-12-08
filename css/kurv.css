@@ -1,0 +1,37 @@
+@import url("styles.css"); /* IMPORTERES SÅ VI HAR ADGANG TIL VARIABLER */
+
+
+main {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 0px;
+    width: 100%;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    margin: 40px 0;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .mobile {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .desktop {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .mobile {
+        display: none;
+    }
+}

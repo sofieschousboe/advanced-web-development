@@ -1,3 +1,6 @@
+@import url("styles.css"); /* IMPORTERES SÅ VI HAR ADGANG TIL VARIABLER */
+
+
 main {
 	padding-top: 120px;
 	padding-bottom: 55px;

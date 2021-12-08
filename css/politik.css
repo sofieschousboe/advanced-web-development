@@ -3,6 +3,11 @@ main {
     padding: 20px;
 }
 
+.back {
+    padding-top: 120px;
+    width: 40px;
+  }
+
 @media only screen and (min-width: 900px) {
     main {
         display: block;
@@ -58,4 +63,8 @@ main p a {
     text-decoration: none;
     color: var(--lightGreen);
     font-style: italic;
+}
+
+.back {
+    width: 40px;
 }
