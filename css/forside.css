@@ -19,7 +19,7 @@ main {
 .stemningsbillede1_mobile {
     background-image: url(../img/st-img/st-forside-kvadrat.jpg);
 	background-attachment: fixed;
-    background-position: relative;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 500px;
     width: 100%;
@@ -32,7 +32,6 @@ main {
     background-image: url(../img/st-img/st-salat-high.jpg);
 	background-attachment: fixed;
     background-position: bottom;
-    background-position: relative;
     background-repeat: no-repeat;
     background-size: 420px;
     width: 100%;
@@ -170,10 +169,10 @@ main {
 }
 
 .mere_link {
+    display: flex;
 	text-align: center;
 	text-decoration: none;
 	color: var(--gray);
-	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	width: 170px;
