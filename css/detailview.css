@@ -23,11 +23,15 @@ h1 {
 	margin-top: -3px;
 	padding-top: 50px;
 	padding-bottom: 20px;
+	font-size: 2rem;
 }
 
 img  {
 	width: 100%;
 }
+
+
+/* MENU DETAILVIEW */ 
 
 .menuIMG {
 	width: 100%;
@@ -280,4 +284,206 @@ h4  {
 	margin: 50px auto;
 	font-size: 1rem;
 	width: 250px;
+}
+
+@media only screen and (min-width: 1200px) {
+	.imgTekstFlex {
+		display: flex;
+		flex-direction: row;
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+	.menuIMG {
+		width: 50%;
+		margin-right: 15px;
+	}
+
+	.tekstInfoFlex {
+		margin-left: 15px;
+		padding-top: 20px;
+	}
+
+	.tilvalgHensyn {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+	.hvidBox {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.accordion {
+		width: 100%;
+	}
+
+	.panel {
+		width: 100%;
+	}
+
+	.tekstFlex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border-bottom: none;
+		width: 65%;
+	}
+
+	.selectNumberBox {
+		width: 30%;
+		margin-right: 0;
+		padding-right: 0;
+		height: 26px;
+	}
+
+	.hensynFlex {
+		width: 50%;
+	}
+
+	.tilvalg {
+		width: 50%;
+	}
+
+	.hensyn p {
+		width: 70%;
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.kommentar {
+		border: 1px solid #83a09e;
+		border-radius: 10px;
+		width: 85%;
+		margin-left: 40px;
+		padding: 35px;
+		font-size: 1.1rem;
+	}
+
+	.kuvertTotalFlex {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.kuvertFlex {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		padding-left: 50px;
+	}
+
+	.kuvertFlex .selectNumberBox {
+		width: 100%;
+		margin-left: 20px;
+	}
+
+	.kuvertFlex p {
+		margin-left: 30px;
+	}
+	.totalFlex {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		margin-top: 0;
+	}
+
+	.tilfojsmat {
+		display: flex;
+		flex-direction: column;
+		margin-right: 50px;
+	}
+
+	.tilfoj {
+		padding: 6px 30px;
+		margin-top: 30px;
+		width: 36.5%;
+		display: block;
+		margin-left: auto;
+	}
+
+	.detmedsmat {
+		display: block;
+		margin-left: auto;
+		margin-right: 0;
+		text-align: start;
+	}
+}
+
+
+/* OTHER MENUS DETAILVIEW */
+
+.other_bg_tekst {
+	margin: 20px 15px;
+	border-radius: 10px;
+	padding: 50px 10px; 
+}
+
+.other_bg_tekst p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.otherOverskriftMenu {
+	padding-bottom: 40px;
+	font-size: 1.6rem;;
+}
+
+.selectFoodBTN {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #83a09e;
+	width: 190px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.selectFoodBTN input {
+	width: 40px;
+	padding: 10px;
+	text-align: center;
+}
+
+.tilfojFood {
+	padding: 5px 20px; 
+	width: 150px;
+	background-color: var(--blue);
+	color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+	.other_info_flex {
+		display: flex;  
+		flex-direction: row;
+		padding: 0 80px;
+		margin-top: 10px;
+	}
+
+	.otherMenuIMG {
+		width: 50%;
+		margin-right: 30px;
+		box-shadow: 3px 3px 8px #707070; 
+	}
+
+	.otherTilvalg {
+		width: 100%; 
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+
+	.selectFoodBTN {
+		display: flex;
+		flex-direction: row;
+		margin-left: auto;
+		margin-left: auto;
+		margin-right: 0;
+
+	}
+
 }

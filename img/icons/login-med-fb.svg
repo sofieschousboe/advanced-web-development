@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="42" viewBox="0 0 43 42">
+  <g id="Circle_Button_" data-name="Circle Button " transform="translate(0)">
+    <g id="Area_SIZE:MEDIUM_STATE:DEFAULT_STYLE:STYLE2_" data-name="Area [SIZE:MEDIUM][STATE:DEFAULT][STYLE:STYLE2]" transform="translate(0 0)" fill="#fff" stroke="#c5c8b3" stroke-width="2">
+      <rect width="43" height="42" rx="21" stroke="none"/>
+      <rect x="1" y="1" width="41" height="40" rx="20" fill="none"/>
+    </g>
+    <g id="Icon_" data-name="Icon " transform="translate(13 12)">
+      <rect id="Area_ICON:feather_facebook_SIZE:MEDIUM_STATE:DEFAULT_STYLE:STYLE2_" data-name="Area [ICON:feather/facebook][SIZE:MEDIUM][STATE:DEFAULT][STYLE:STYLE2]" width="18" height="18" transform="translate(0 0)" fill="rgba(253,73,198,0.35)" opacity="0"/>
+      <g id="Icon" transform="translate(4.825 1.579)">
+        <path id="Path" d="M14,1.667H11.774A3.713,3.713,0,0,0,8.061,5.379V7.607H5.833v2.971H8.061v5.94h2.971v-5.94H13.26L14,7.607h-2.97V5.379a.742.742,0,0,1,.742-.742H14Z" transform="translate(-5.833 -1.667)" fill="none" stroke="#c5c8b3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667"/>
+      </g>
+    </g>
+  </g>
+</svg>

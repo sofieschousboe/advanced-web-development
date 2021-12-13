@@ -1,37 +1,150 @@
 @import url("styles.css"); /* IMPORTERES SÅ VI HAR ADGANG TIL VARIABLER */
 
-
 main {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 140px;
-    padding-bottom: 0px;
-    width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 140px;
+	padding-bottom: 0px;
+	width: 100%;
 }
 
-.desktop {
-    display: none;
+/*--indkøbskurv produktdetaljer--*/
+.card_page {
+	margin: 80px auto;
+	width: 80%;
 }
 
-.mobile {
-    margin: 40px 0;
-    max-width: 100%;
+table {
+	width: 100%;
+	border-collapse: collapse;
 }
 
-@media only screen and (min-width: 600px) {
-    .mobile {
-        width: 90%;
-    }
+.cart_info {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 800px) {
-    .desktop {
-        display: block;
-        margin: 0 auto;
-    }
-    
-    .mobile {
-        display: none;
-    }
+th {
+	text-align: left;
+	padding: 5px;
+	color: #a0a97c;
+	background: white;
+	font-weight: normal;
+	border-bottom: 1px solid #707070;
+}
+
+td {
+	padding: 10px 5px;
+}
+
+td input {
+	width: 40px;
+	height: 30px;
+	padding: 5px;
+	border: 1px solid #a0a97c;
+	text-align: center;
+	color: #707070;
+}
+
+.madImg {
+	width: 80px;
+	margin-right: 10px;
+}
+
+.cart_info div {
+	display: flex;
+	flex-direction: column;
+}
+
+.cart_info p {
+	margin-left: 0;
+	padding-left: 0;
+	font-size: 1rem;
+}
+
+.trash {
+	width: 30px;
+}
+
+.total_pris {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.pris {
+	color: #707070;
+	font-size: 1rem;
+}
+
+.total_pris table {
+	width: 100%;
+	max-width: 400px;
+}
+
+.total_pris table tr {
+	border-bottom: 1px solid #707070;
+	color: #a0a97c;
+}
+
+td:last-child {
+	text-align: right;
+}
+
+th:last-child {
+	text-align: right;
+}
+
+.kassen {
+	text-align: center;
+	color: white;
+	background-color: var(--blue);
+	padding: 15px 40px;
+	width: 230px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 8px #707070;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 1200px) {
+	.card_page {
+		width: 60%;
+	}
+
+	th {
+		font-size: 2rem;
+		color: var(--Green);
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.madImg {
+		width: 150px;
+	}
+
+	.trash {
+		margin-top: 20px;
+	}
+
+	.cart_info p {
+		font-size: 1.3rem;
+	}
+
+	.pris {
+		font-size: 1.3rem;
+	}
+
+	.total_pris table tr {
+		font-size: 1.3rem;
+		text-align: start;
+	}
+
+	.kassen {
+		display: block;
+		margin-left: auto;
+		margin-right: 0;
+	}
 }

@@ -38,6 +38,71 @@
 
     <main>
         <h1>LOGIN</h1>
+        <div class="login-flex">
+            <div class="login-img">
+                <img src="../img/icons/login-illustration.svg" alt="Login illustration">
+            </div>
+
+            <div class="account-page">
+                <div class="container_1">
+                    <div class="row_1">
+                        <div class="colone">
+                        </div>
+                        <div class="colone">
+                            <div class="form_kontainer">
+                                <div class="form_btn">
+                                    <span onclick="login()">Log ind</span>
+                                    <span onclick="registrer()">Registrer</span>
+                                    <hr id="Indicator">
+                                </div>
+                                <form id="loginForm">
+                                    <input type="text" placeholder="Brugernavn">
+                                    <input type="password" placeholder="Adgangskode">
+                                    <div class="input_Flex">
+                                        <input type="checkbox"><p class="regText">Forbliv logget ind</p>
+                                    </div>
+                                    <button type="submit" class="linkIND">LOG IND</button>
+                                    <a href="">Glemt kodeord?</a>
+
+                                    <p class="login_text">— Eller log ind med —</p>
+                                    <div class="some_login">
+                                        <img src="../img/icons/login-med-fb.svg" class="mini-login" alt="billede af some login">
+                                        <img src="../img/icons/login-med-g.svg" class="mini-login" alt="billede af some login">
+                                        <img src="../img/icons/login-med-ig.svg" class="mini-login" alt="billede af some login">
+                                        <img src="../img/icons/login-med-twt.svg" class="mini-login" alt="billede af some login">
+                                    </div>
+                                </form>
+
+                                <form id="regForm">
+                                    <input type="text" placeholder="Fulde navn">
+                                    <input type="email" placeholder="E-mail">
+                                    <input type="password" placeholder="Kodeord">
+                                    <input type="text" placeholder="Vejnavn og husnr.">
+                                    <div class="input_Flex">
+                                    <input type="text" placeholder="Postnr."><input type="text" placeholder="By"></div>
+                                    <p class="regText">Indtast din fødselsdag</p>
+                                    <div class="input_Flex">
+                                    <input type="text" placeholder="Dag"><input type="text" placeholder="Måned"><input type="text" placeholder="Årstal">
+                                    </div>
+                                    <div class="input_Flex">
+                                    <input type="checkbox" class="check"><p class="regText">Forbliv logget ind</p>
+                                    </div>
+                                    <button type="submit" class="linkIND">OPRET BRUGER</button>
+
+                                    <p class="login_text">— Eller log ind med —</p>
+                                    <div class="some_login">
+                                    <img src="../img/icons/login-med-fb.svg" class="mini-login" alt="billede af some login">
+                                    <img src="../img/icons/login-med-g.svg" class="mini-login" alt="billede af some login">
+                                    <img src="../img/icons/login-med-ig.svg" class="mini-login" alt="billede af some login">
+                                    <img src="../img/icons/login-med-twt.svg" class="mini-login" alt="billede af some login">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- FOOTER -->
@@ -150,5 +215,25 @@
         <div class="copyright-box">
             <p>&copy; 2021 GRÖN</p>
         </div> 
+
+
+        <!--JavaScript til loginform-->
+        <script>
+            var loginForm = document.getElementById("loginForm");
+            var regForm = document.getElementById("regForm");
+            var Indicator = document.getElementById("Indicator");
+
+            function registrer() {
+                regForm.style.transform = "translateX(0px)";
+                loginForm.style.transform = "translateX(30px)";
+                Indicator.style.transform = "translateX(120px)";
+            }
+            function login() {
+                regForm.style.transform = "translateX(325px)";
+                loginForm.style.transform = "translateX(325px)";
+                Indicator.style.transform = "translateX(10px)";
+            }
+
+        </script>
 </body>
 </html>

@@ -7,44 +7,109 @@ main {
 .stemningsbillede1_pc {
     display: none;
 }
+
 .stemningsbillede2_pc {
     display: none;
 }
+
 .stemningsbillede3_pc {
     display: none;
 }
 
 .stemningsbillede1_mobile {
-    background-image: url(../img/st-img/st-coffee-mini.jpg);
+    background-image: url(../img/st-img/st-forside-kvadrat.jpg);
 	background-attachment: fixed;
-    background-position: right;
+    background-position: relative;
     background-repeat: no-repeat;
+    background-size: 500px;
     width: 100%;
-    height: 500px;
+    height: 360px;
     z-index: 99; 
+    padding-top: 200px;
 }
 
 .stemningsbillede2_mobile {
-    background-image: url(../img/st-img/st-food-mini.jpg);
+    background-image: url(../img/st-img/st-salat-high.jpg);
 	background-attachment: fixed;
-        background-position: bottom;
+    background-position: bottom;
+    background-position: relative;
     background-repeat: no-repeat;
+    background-size: 420px;
     width: 100%;
-    height: 500px;
-    top: 0; 
+    height: 300px;
+    top: 0px; 
     z-index: 99; 
 }
 
 .stemningsbillede3_mobile {
-    background-image: url(../img/st-img/st-kage-mini.jpg);
+    background-image: url(../img/st-img/st-kage-high.jpg);
 	background-attachment: fixed;
-        background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    width:100%;
-    height: 500px;
+    background-size: 420px;
+    width: 100%;
+    height: 300px;
     top: 0; 
     z-index: 99; 
 }
+
+@media only screen and (min-width: 500px) {
+
+    .stemningsbillede1_mobile {
+        background-position: center;
+    }
+
+    .stemningsbillede2_mobile {
+        background-size: 500px;
+        height: 350px;
+        background-position: center;
+
+    }
+
+    .stemningsbillede3_mobile {
+        background-size: 500px;
+    }
+
+}
+
+
+@media only screen and (min-width: 700px) {
+    
+    .stemningsbillede1_mobile {
+        background-size: 700px;
+    }
+    
+    .stemningsbillede2_mobile {
+        background-size: 700px;
+
+    }
+
+    .stemningsbillede3_mobile {
+        background-size: 700px;
+        height: 350px;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    
+    .stemningsbillede1_mobile {
+        background-size: 900px;
+        height: 400px;
+    }
+    
+    .stemningsbillede2_mobile {
+        background-size: 900px;
+        height: 400px;
+    }
+
+    .stemningsbillede3_mobile {
+        background-size: 900px;
+        height: 400px;
+    }
+
+}
+
 
 /* stemningsbilleder - PC style */
 @media only screen and (min-width: 1000px) {
@@ -60,28 +125,30 @@ main {
 
     .stemningsbillede1_pc {
         display: block;
-        background-image: url(../img/st-img/st-coffee.jpg);
-	background-attachment: fixed;
-    width: 100%;
-    height: 900px;
-    top: 0; 
-    z-index: 99;
+        background-image: url(../img/st-img/st-forside-stor.jpg);
+        background-attachment: fixed;
+        width: 100%;
+        height: 500px;
+        top: 0; 
+        z-index: 99;
     }
+    
     .stemningsbillede2_pc {
         display: block;
         background-image: url(../img/st-img/st-food.jpg);
-	background-attachment: fixed;
-    width: 100%;
-    height: 900px;
-    top: 0; 
-    z-index: 99;
+        background-attachment: fixed;
+        width: 100%;
+        height: 500px;
+        top: 0; 
+        z-index: 99;
     }
+    
     .stemningsbillede3_pc {
         display: block;
         background-image: url(../img/st-img/st-kage.jpg);
 	    background-attachment: fixed;
         width: 100%;
-        height: 900px;
+        height: 500px;
         top: 0; 
         z-index: 99;
     }
@@ -89,7 +156,7 @@ main {
 
 /*  INFO SECTION */
 .info_forside_section {
-    padding: 80px 10px 80px;
+    padding: 60px 10px 60px;
     background: transparent; 
 }
 
@@ -116,12 +183,13 @@ main {
 
 .frem_billede {
 	width: 40px;
+    margin-right: 10px;
 }
 
 /* Info section - PC style */
 @media only screen and (min-width: 900px) {
     .info_forside_section {
-        padding: 140px 80px;
+        padding: 50px 80px;
     }
 
     .info_forside_tekst {

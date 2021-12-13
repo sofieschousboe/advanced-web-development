@@ -38,8 +38,63 @@
 
     <main>
         <h1>DIN KURV</h1>
-        <img src="../img/cart-temp.PNG" class="desktop">
-        <img src="../img/cart-temp-mobile.PNG" class="mobile">
+        
+        <div class="kurv_kontainer card_page" id="kurv">
+            <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Antal</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart_info">
+                            <img src="../img/denmedlaks1.jpg" alt="billede" class="madImg">
+                            <div>
+                                <p>DEN MED LAKS</p>
+                                <img src="../img/icons/trashcan.jpg" alt="img" class="trash">
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="10" id="antal"></td>
+                    <td class="pris">1850 kr</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart_info">
+                            <img src="../img/kage4.jpg" alt="billede" class="madImg">
+                            <div>
+                                <p>GLUTENFRI BROWNIES</p>
+                                <img src="../img/icons/trashcan.jpg" alt="img" class="trash">
+
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td class="pris">35 kr</td>
+                </tr>
+            </table>
+
+            <div class="total_pris">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>1508 kr (eksl. moms)</td>
+                    </tr>
+                    <tr>
+                        <td>Moms</td>
+                        <td>377 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>1885 kr (inkl. moms</td>
+                    </tr>
+
+                </table>
+            </div>
+            <a href="error.html" rel="link" class="kassen">GÅ TIL KASSEN</a>
+        </div>
+
     </main>
 
     <!-- FOOTER -->
