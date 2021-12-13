@@ -64,7 +64,7 @@ async function initDetailView() {
         <div class="bg_menu" style="background-color:#c6cea5;">
             <h1>${menuData.name}</h1>
             <div class="imgTekstFlex">
-                <img src="${menuData.img1}" class="menuIMG">
+                <img src="${menuData.img1}" class="menuIMG" alt="Billede af menu">
                 <div class="tekstInfoFlex">
                     <p class="descript">${menuData.description}</p>
                     <h2 class="menu_os">Menuen</h2>
@@ -93,9 +93,9 @@ async function initDetailView() {
                         <p>35,-/kuvert</p>
                     </div>
                     <div class="selectNumberBox">
-                        <button onclick="subtract()"><</button>
-                        <input type="number" onchange="" placeholder="0">
-                        <button onclick="add()">></button>
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
                     </div>
                 </div>
                 <div class="hvidBox">
@@ -104,9 +104,9 @@ async function initDetailView() {
                         <p>35,-/kuvert</p>
                     </div>
                     <div class="selectNumberBox">
-                        <button onclick="subtract()"><</button>
-                        <input type="number" onchange="" placeholder="0">
-                        <button onclick="add()">></button>
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
                     </div>
                 </div>
                 <div class="hvidBox">
@@ -115,9 +115,9 @@ async function initDetailView() {
                         <p>40,-/kuvert</p>
                     </div>
                     <div class="selectNumberBox">
-                        <button onclick="subtract()"><</button>
-                        <input type="number" onchange="" placeholder="0">
-                        <button onclick="add()">></button>
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
                     </div>
                 </div>
                 <div class="hvidBox">
@@ -126,9 +126,9 @@ async function initDetailView() {
                         <p>40,-/kuvert</p>
                     </div>
                     <div class="selectNumberBox">
-                        <button onclick="subtract()"><</button>
-                        <input type="number" onchange="" placeholder="0">
-                        <button onclick="add()">></button>
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
                     </div>
                 </div>
                 <div class="hvidBox">
@@ -137,9 +137,9 @@ async function initDetailView() {
                         <p>35,-/kuvert</p>
                     </div>
                     <div class="selectNumberBox">
-                        <button onclick="subtract()"><</button>
-                        <input type="number" onchange="" placeholder="0">
-                        <button onclick="add()">></button>
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
                     </div>
                 </div>
             </div>
@@ -147,181 +147,176 @@ async function initDetailView() {
 
 
             <button class="accordion">Dressinger</button>
-                <div class="panel">
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Peberfrugtcreme</p>
-                            <p>5,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
+            <div class="panel">
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Peberfrugtcreme</p>
+                        <p>5,-/kuvert</p>
                     </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Auberginecreme</p>
-                            <p>5,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Avocadocreme</p>
-                            <p>5,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Almindelig hummus</p>
-                            <p>5,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Hokkaidohummus</p>
-                            <p>5,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Rødbedehummus</p>
-                            <p>5,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
                     </div>
                 </div>
-    
-
-
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Auberginecreme</p>
+                        <p>5,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Avocadocreme</p>
+                        <p>5,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Almindelig hummus</p>
+                        <p>5,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Hokkaidohummus</p>
+                        <p>5,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Rødbedehummus</p>
+                        <p>5,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+            </div>
             <button class="accordion">Salater</button>
             <div class="panel">
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Feta og oliven</p>
-                            <p>20,-/kuvert</p>
-                    </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                        <p>Butterbeans med pesto, squash, tomat og persille</p>
-                            <p>10,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                        <p>Mungbønner med peberfrugt, bladselleri, gulerod og græskarkerner</p>
-                            <p>10,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                        <p>Mungbønner med peberfrugt, bladselleri, gulerod og græskarkerner</p>
-                            <p>10,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                        <p>Råmarineret hvidkål med mango, porrer og sesam</p>
-                            <p>10,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                        <p>Quinoa med hokkaido, grønkål og sure kirsebær</p>
-                            <p>10,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Råmarineret rødkål med fennikel, æble, valnødder</p>
-                            <p>10,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Havrekerner med basilikum, bagte gule beder, edamame, rød spidskål og granatæblekerner</p>
-                            <p>10,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
-                    </div>
-                    <div class="hvidBox">
-                        <div class="tekstFlex">
-                            <p>Råkost med gulerod, knoldselleri, broccoli, æble og morbær</p>
-                            <p>10,-/kuvert</p>
-                        </div>
-                        <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
-                        </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Feta og oliven</p>
+                        <p>20,-/kuvert</p>
+                </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
                     </div>
                 </div>
-    
-
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                    <p>Butterbeans med pesto, squash, tomat og persille</p>
+                        <p>10,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                    <p>Mungbønner med peberfrugt, bladselleri, gulerod og græskarkerner</p>
+                        <p>10,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                    <p>Mungbønner med peberfrugt, bladselleri, gulerod og græskarkerner</p>
+                        <p>10,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                    <p>Råmarineret hvidkål med mango, porrer og sesam</p>
+                        <p>10,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                    <p>Quinoa med hokkaido, grønkål og sure kirsebær</p>
+                        <p>10,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Råmarineret rødkål med fennikel, æble, valnødder</p>
+                        <p>10,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Havrekerner med basilikum, bagte gule beder, edamame, rød spidskål og granatæblekerner</p>
+                        <p>10,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+                <div class="hvidBox">
+                    <div class="tekstFlex">
+                        <p>Råkost med gulerod, knoldselleri, broccoli, æble og morbær</p>
+                        <p>10,-/kuvert</p>
+                    </div>
+                    <div class="selectNumberBox">
+                        <button onclick="subtractAmount()"><</button>
+                        <input type="number" onchange="" placeholder="0" min="0">
+                        <button onclick="addAmount()">></button>
+                    </div>
+                </div>
+            </div>
 
             <button class="accordion">Retter</button>
             <div class="panel">
@@ -332,9 +327,9 @@ async function initDetailView() {
                             <p>20,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -343,9 +338,9 @@ async function initDetailView() {
                             <p>50,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -354,9 +349,9 @@ async function initDetailView() {
                             <p>80,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -365,9 +360,9 @@ async function initDetailView() {
                             <p>40,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -376,9 +371,9 @@ async function initDetailView() {
                             <p>40,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -387,9 +382,9 @@ async function initDetailView() {
                             <p>40,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -398,9 +393,9 @@ async function initDetailView() {
                             <p>25,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -409,9 +404,9 @@ async function initDetailView() {
                             <p>25,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                           <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                           <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -420,9 +415,9 @@ async function initDetailView() {
                             <p>50,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -431,9 +426,9 @@ async function initDetailView() {
                             <p>40,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -442,9 +437,9 @@ async function initDetailView() {
                             <p>35,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                            <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                            <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                     <div class="hvidBox">
@@ -453,71 +448,69 @@ async function initDetailView() {
                             <p>10,-/kuvert</p>
                         </div>
                         <div class="selectNumberBox">
-                           <button onclick="subtract()"><</button>
-                            <input type="number" onchange="" placeholder="0">
-                            <button onclick="add()">></button>
+                           <button onclick="subtractAmount()"><</button>
+                            <input type="number" onchange="" placeholder="0" min="0">
+                            <button onclick="addAmount()">></button>
                         </div>
                     </div>
                 </div>
-
-
-        </div>
-        <!-- TILFØJ TILVALGSDROPDOWNTING-->
-        <div class="hensynFlex">
-            <h4>SÆRLIGE HENSYN</h4>
-            <div class="hensyn">
-                <p>Har du en vegetar, veganer eller allergiker i dit selskab? Skriv da dette i kommentarfeltet og vi vil levere et alternativ til den/de pågældende person(er).</p>
-                <form>
-                    <textarea placeholder="Kommentar..." class="kommentar"></textarea>
-                </form>
             </div>
-            <div class="order">
-                <div class="itemsFlex">
-                    <div>
-                        <h3>${menuData.name}</h3>
-                    </div>
-                    <div class="kuvertTotalFlex">
-                        <div class="kuvertFlex">
-                            <p>Min. 10 kuverter</p>
-                            <div class="selectNumberBox">
-                                <button id="down"><</button>
-                                <input id="amount" type="number" value="10">
-                                <button id="up">></button>
+            <!-- TILFØJ TILVALGSDROPDOWNTING-->
+            <div class="hensynFlex">
+                <h4>SÆRLIGE HENSYN</h4>
+                <div class="hensyn">
+                    <p>Har du en vegetar, veganer eller allergiker i dit selskab? Skriv da dette i kommentarfeltet og vi vil levere et alternativ til den/de pågældende person(er).</p>
+                    <form>
+                        <textarea placeholder="Kommentar..." class="kommentar"></textarea>
+                    </form>
+                </div>
+                <div class="order">
+                    <div class="itemsFlex">
+                        <div>
+                            <h3>${menuData.name}</h3>
+                        </div>
+                        <div class="kuvertTotalFlex">
+                            <div class="kuvertFlex">
+                                <p>Min. 10 kuverter</p>
+                                <div class="selectNumberBox">
+                                    <button class="down"><</button>
+                                    <input class="amount" type="number" value="10" min="10">
+                                    <button class="up">></button>
+                                </div>
+                            </div>
+                
+                            <div class="totalFlex">
+                                <p>Subtotal</p>
+                                <p class="amountToPay">${menuData.subtotal},-</p>
                             </div>
                         </div>
-            
-                        <div class="totalFlex">
-                            <p>Subtotal</p>
-                            <p class="amountToPay">${menuData.subtotal},-</p>
-                        </div>
                     </div>
                 </div>
+                <div class="tilfojsmat">
+                    <button type="submit" class="tilfoj">Tilføj til kurv</button>
+                
+                    <p class="detmedsmat">Bestil venligst maden senest 3 hverdage i forvejen.
+                    <br>Menuen skal bestilles til min. 10 kuverter.
+                    <br>Vores mad er anrettet på fade og i skåle, som er til venligt udlån og som skal tilbageleveres rengjort efter endt festivitas.
+                    <br><br>Efter bestillingen er gennemført, vil du modtage en bekræftelse på mail. Bestillingen er først gældende når du har modtaget denne mail (forvent mailbekræftelse indenfor 1-2 dage).</p>
+                </div>
             </div>
-            <div class="tilfojsmat">
-            <button type="submit" class="tilfoj">Tilføj til kurv</button>
-        
-        <p class="detmedsmat">Bestil venligst maden senest 3 hverdage i forvejen.
-        <br>Menuen skal bestilles til min. 10 kuverter.
-        <br>Vores mad er anrettet på fade og i skåle, som er til venligt udlån og som skal tilbageleveres rengjort efter endt festivitas.
-        <br><br>Efter bestillingen er gennemført, vil du modtage en bekræftelse på mail. Bestillingen er først gældende når du har modtaget denne mail (forvent mailbekræftelse indenfor 1-2 dage).</p>
-        </div>
-        </div>
         </div>
     </article>`;
 
     accord();
 
     // add() skal tage værdien fra inputfeltet og tilføje 1
-    document.querySelector("#up").addEventListener("click", function addAmount() {
-        document.querySelector("#amount").value = parseInt(document.querySelector("#amount").value) + 1;
+    document.querySelector(".up").addEventListener("click", function addAmount() {
+        document.querySelector(".amount").value = parseInt(document.querySelector(".amount").value) + 1;
     });
 
     // subtractAmount() skal tage værdien fra inputfeltet og trække 1 fra
-    document.querySelector("#down").addEventListener("click", function subtractAmount() {
-        document.querySelector("#amount").value = parseInt(document.querySelector("#amount").value) -1;
+    document.querySelector(".down").addEventListener("click", function subtractAmount() {
+        document.querySelector(".amount").value = parseInt(document.querySelector(".amount").value) -1;
 
-        if (document.querySelector("#amount").value <= parseInt(10)) {
-            document.querySelector("#amount").value = 10;
+        if (document.querySelector(".amount").value <= parseInt(10)) {
+            document.querySelector(".amount").value = 10;
         }
     });
 
