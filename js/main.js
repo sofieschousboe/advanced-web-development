@@ -1,7 +1,7 @@
 "use strict";
 
+// Sofie
 //FUNCTIONALITY
-
 function goBack() {
     window.history.back();
 }
@@ -10,8 +10,8 @@ function report() {
     alert("Problemet er rapporteret. Tryk på tilbage for at gå tilbage til siden du kom fra.")
 }
 
+// Sofie
 //ACCORDIONS
-
 var accordion = document.getElementsByClassName("accordion");
 var i;
 
@@ -32,7 +32,7 @@ for (i = 0; i < accordion.length; i++) {
 
 
 // SLIDER 
-
+// Simone og Maria
 //Review Slider
 const reviews = document.querySelectorAll(".review");
 let currentReview = 0;

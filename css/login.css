@@ -1,3 +1,4 @@
+/* ---- Maria og Simone ---- */
 @import url("styles.css"); /* IMPORTERES SÅ VI HAR ADGANG TIL VARIABLER */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
@@ -13,10 +14,14 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .login-img {
     width: 40%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 @media only screen and (max-width: 800px) {
@@ -27,6 +32,7 @@ main {
     .login-flex {
         display: block;
         margin: 0 auto;
+        width: 100%;
     }
 }
 

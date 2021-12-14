@@ -1,9 +1,7 @@
+/* ---- Maria, Simone og Sofie ---- */
 @import url("../css/styles.css"); /* IMPORTERES SÅ VI HAR ADGANG TIL VARIABLER */
 
 /* ---------- general styling ---------- */
-
-
-
 
 main {
 	padding-top: 120px;
@@ -277,6 +275,12 @@ h4  {
 	box-shadow: 3px 3px 8px #707070; 
 	margin-top: 10px;
 	width: 60%;
+}
+
+.tilfoj a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 500;
 }
 
 .detmedsmat {

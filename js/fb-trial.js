@@ -1,3 +1,4 @@
+// Maria, Simone og Sofie
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
 import {
   getFirestore,
@@ -49,6 +50,7 @@ onSnapshot(_otherMenusRef, (snapshot) => {
   console.log(_otherMenus);
 });
 
+// Maria, Simone og Sofie
 //Detailview for menus
 async function initDetailView() {
   const params = new URL(location).searchParams;
@@ -58,6 +60,7 @@ async function initDetailView() {
   const menuData = docSnap.data();
   console.log(menuData);
 
+  // Maria, Simone og Sofie
   //Append menuData til DOM'en
   document.querySelector("#menus").innerHTML = /*html*/ `
     <article class="menu">
@@ -487,7 +490,7 @@ async function initDetailView() {
                     </div>
                 </div>
                 <div class="tilfojsmat">
-                    <button type="submit" class="tilfoj">Tilføj til kurv</button>
+                    <button type="submit" class="tilfoj"><a href="../pages/kurv.html" rel="link">Tilføj til kurv</a></button>
                 
                     <p class="detmedsmat">Bestil venligst maden senest 3 hverdage i forvejen.
                     <br>Menuen skal bestilles til min. 10 kuverter.
@@ -500,11 +503,13 @@ async function initDetailView() {
 
     accord();
 
+    // Sofie
     // add() skal tage værdien fra inputfeltet og tilføje 1
     document.querySelector(".up").addEventListener("click", function addAmount() {
         document.querySelector(".amount").value = parseInt(document.querySelector(".amount").value) + 1;
     });
 
+    // Sofie
     // subtractAmount() skal tage værdien fra inputfeltet og trække 1 fra
     document.querySelector(".down").addEventListener("click", function subtractAmount() {
         document.querySelector(".amount").value = parseInt(document.querySelector(".amount").value) -1;
@@ -521,6 +526,7 @@ async function initDetailView() {
 
 initDetailView();
 
+// Maria, Simone og Sofie
 //Detailview for otherMenus
 async function initOtherDetailView() {
   const params = new URL(location).searchParams;
@@ -897,6 +903,7 @@ salat</p>
 }
 
 initOtherDetailView();
+
 
 //ACCORDIONS
 function accord() {
